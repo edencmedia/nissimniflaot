@@ -25,7 +25,7 @@ const trustFactors = [
 
 const Trust = () => {
   return (
-    <section className="relative py-24 bg-primary text-primary-foreground overflow-hidden">
+    <section id="trust" className="relative py-24 bg-primary text-primary-foreground overflow-hidden pt-32">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-64 h-64 bg-accent rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full blur-3xl" />

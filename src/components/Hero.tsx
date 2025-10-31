@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative h-[50vh] min-h-[500px] w-full overflow-hidden">
+    <section id="hero" className="relative h-[50vh] min-h-[500px] w-full overflow-hidden pt-20">
       {images.map((image, index) => (
         <div
           key={index}
@@ -55,9 +55,6 @@ const Hero = () => {
             <span className="block mb-2">משפצים בסטנדרט</span>
             <span className="block bg-gradient-to-l from-accent to-secondary bg-clip-text text-transparent">
               הגבוה ביותר
-            </span>
-            <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-semibold text-white/90">
-              בלי הפתעות בדרך
             </span>
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-white/85 mb-8 max-w-3xl leading-relaxed">

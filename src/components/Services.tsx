@@ -28,7 +28,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-24 bg-gradient-to-b from-background via-muted/20 to-background overflow-hidden">
+    <section id="services" className="relative py-24 bg-gradient-to-b from-background via-muted/20 to-background overflow-hidden pt-32">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl" />
         <div className="absolute bottom-40 right-20 w-96 h-96 bg-secondary rounded-full blur-3xl" />

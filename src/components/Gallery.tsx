@@ -51,7 +51,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section id="gallery" className="py-24 bg-muted/30">
+      <section id="gallery" className="py-24 bg-muted/30 pt-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
