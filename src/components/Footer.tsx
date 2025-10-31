@@ -11,16 +11,31 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-lg">קישורים מהירים</h4>
+            <h4 className="font-semibold mb-4 text-lg">ניווט באתר</h4>
             <ul className="space-y-2 opacity-90">
+              <li>
+                <a href="#hero" className="hover:text-accent transition-colors">
+                  ראשי
+                </a>
+              </li>
               <li>
                 <a href="#services" className="hover:text-accent transition-colors">
                   שירותים
                 </a>
               </li>
               <li>
+                <a href="#trust" className="hover:text-accent transition-colors">
+                  למה אנחנו
+                </a>
+              </li>
+              <li>
                 <a href="#gallery" className="hover:text-accent transition-colors">
-                  גלריה
+                  פרויקטים
+                </a>
+              </li>
+              <li>
+                <a href="#testimonials" className="hover:text-accent transition-colors">
+                  המלצות
                 </a>
               </li>
               <li>

@@ -12,31 +12,37 @@ const projects = [
     image: bathroomImage,
     title: "שיפוץ חדר אמבטיה יוקרתי",
     category: "אמבטיה",
+    location: "תל אביב",
   },
   {
     image: kitchenImage,
     title: "מטבח מודרני ומעוצב",
     category: "מטבח",
+    location: "ראשון לציון",
   },
   {
     image: bedroomImage,
     title: "חדר שינה אלגנטי",
     category: "חדר שינה",
+    location: "אשדוד",
   },
   {
     image: livingImage,
     title: "סלון ופינת אוכל",
     category: "מרחב מגורים",
+    location: "באר שבע",
   },
   {
     image: officeImage,
     title: "חדר עבודה עם נגרות בהתאמה אישית",
     category: "נגרות",
+    location: "רמת גן",
   },
   {
     image: heroImage,
     title: "שיפוץ דירה מלא",
     category: "פרויקט מלא",
+    location: "נתניה",
   },
 ];
 
@@ -69,6 +75,18 @@ const Gallery = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                
+                {/* Always visible label in corner */}
+                <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-accent/30">
+                  <p className="text-accent font-semibold text-sm mb-0.5">
+                    {project.title}
+                  </p>
+                  <p className="text-white/80 text-xs">
+                    {project.location}
+                  </p>
+                </div>
+
+                {/* Hover overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-sm text-accent font-medium mb-2">
@@ -77,6 +95,9 @@ const Gallery = () => {
                     <h3 className="text-xl font-bold text-white">
                       {project.title}
                     </h3>
+                    <p className="text-white/80 text-sm mt-1">
+                      {project.location}
+                    </p>
                   </div>
                 </div>
               </div>
