@@ -76,27 +76,27 @@ const Contact = () => {
               <div className="space-y-6">
                 <a
                   href="tel:0535451234"
-                  className="flex items-center gap-6 p-8 bg-card rounded-xl border-2 border-border hover:border-accent transition-all duration-300 group shadow-lg hover:shadow-xl"
+                  className="flex items-center gap-4 p-6 bg-card rounded-xl border-2 border-border hover:border-accent transition-all duration-300 group shadow-lg hover:shadow-xl"
                 >
-                  <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground flex items-center justify-center transition-all">
-                    <Phone className="h-8 w-8" />
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground flex items-center justify-center transition-all">
+                    <Phone className="h-7 w-7" />
                   </div>
-                  <div>
-                    <p className="text-base text-muted-foreground mb-2">טלפון</p>
-                    <p className="text-2xl font-bold text-foreground" dir="ltr">053-545-1234</p>
+                  <div className="min-w-0">
+                    <p className="text-sm text-muted-foreground mb-1">טלפון</p>
+                    <p className="text-lg font-bold text-foreground" dir="ltr">053-545-1234</p>
                   </div>
                 </a>
 
                 <a
                   href="mailto:nissanswisa11@gmail.com"
-                  className="flex items-center gap-6 p-8 bg-card rounded-xl border-2 border-border hover:border-accent transition-all duration-300 group shadow-lg hover:shadow-xl"
+                  className="flex items-center gap-4 p-6 bg-card rounded-xl border-2 border-border hover:border-accent transition-all duration-300 group shadow-lg hover:shadow-xl"
                 >
-                  <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground flex items-center justify-center transition-all">
-                    <Mail className="h-8 w-8" />
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground flex items-center justify-center transition-all">
+                    <Mail className="h-7 w-7" />
                   </div>
-                  <div>
-                    <p className="text-base text-muted-foreground mb-2">אימייל</p>
-                    <p className="text-xl font-bold text-foreground break-all">nissanswisa11@gmail.com</p>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm text-muted-foreground mb-1">אימייל</p>
+                    <p className="text-base font-bold text-foreground break-all">nissanswisa11@gmail.com</p>
                   </div>
                 </a>
 
@@ -104,14 +104,14 @@ const Contact = () => {
                   href="https://wa.me/972535451234"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-6 p-8 bg-card rounded-xl border-2 border-border hover:border-accent transition-all duration-300 group shadow-lg hover:shadow-xl"
+                  className="flex items-center gap-4 p-6 bg-card rounded-xl border-2 border-border hover:border-accent transition-all duration-300 group shadow-lg hover:shadow-xl"
                 >
-                  <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground flex items-center justify-center transition-all">
-                    <MessageSquare className="h-8 w-8" />
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground flex items-center justify-center transition-all">
+                    <MessageSquare className="h-7 w-7" />
                   </div>
-                  <div>
-                    <p className="text-base text-muted-foreground mb-2">וואטסאפ</p>
-                    <p className="text-2xl font-bold text-foreground">שלח הודעה</p>
+                  <div className="min-w-0">
+                    <p className="text-sm text-muted-foreground mb-1">וואטסאפ</p>
+                    <p className="text-lg font-bold text-foreground">שלח הודעה</p>
                   </div>
                 </a>
               </div>

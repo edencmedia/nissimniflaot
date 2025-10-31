@@ -49,7 +49,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in-up h-96 border-2 border-transparent hover:border-accent"
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 animate-fade-in-up h-72 md:h-96 border-2 border-transparent hover:border-accent"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div
