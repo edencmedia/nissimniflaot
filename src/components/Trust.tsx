@@ -25,8 +25,13 @@ const trustFactors = [
 
 const Trust = () => {
   return (
-    <section className="py-24 bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative py-24 bg-primary text-primary-foreground overflow-hidden">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-accent rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/50 rounded-full blur-3xl" />
+      </div>
+      <div className="relative mx-auto max-w-7xl px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             למה לבחור בניסים ונפלאות?
@@ -36,23 +41,21 @@ const Trust = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {trustFactors.map((factor, index) => {
             const Icon = factor.icon;
             return (
               <div
                 key={index}
-                className="flex gap-6 p-8 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-all duration-300 animate-fade-in-up"
+                className="flex flex-col items-center text-center p-6 hover:scale-105 transition-transform duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex-shrink-0">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-accent text-accent-foreground">
-                    <Icon className="h-8 w-8" />
-                  </div>
+                <div className="mb-6">
+                  <Icon className="h-16 w-16 text-accent" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">{factor.title}</h3>
-                  <p className="text-lg opacity-90 leading-relaxed">
+                  <h3 className="text-xl font-bold mb-3">{factor.title}</h3>
+                  <p className="text-base opacity-90 leading-relaxed">
                     {factor.description}
                   </p>
                 </div>

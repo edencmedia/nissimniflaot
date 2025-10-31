@@ -1,8 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare } from "lucide-react";
+import { useState, useEffect } from "react";
 import heroImage from "@/assets/hero-renovation.jpg";
+import bathroomImg from "@/assets/project-bathroom.jpg";
+import kitchenImg from "@/assets/project-kitchen.jpg";
+import bedroomImg from "@/assets/project-bedroom.jpg";
+import livingImg from "@/assets/project-living.jpg";
+
+const images = [heroImage, bathroomImg, kitchenImg, bedroomImg, livingImg];
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
   const handleContact = () => {
     const phone = "0535451234";
     window.location.href = `tel:${phone}`;
@@ -16,12 +32,17 @@ const Hero = () => {
 
   return (
     <section className="relative h-[50vh] min-h-[500px] w-full overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
-      </div>
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            index === currentImageIndex ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ backgroundImage: `url(${image})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        </div>
+      ))}
       
       <div className="relative z-10 mx-auto max-w-7xl px-6 h-full flex items-center">
         <div className="max-w-3xl animate-fade-in">

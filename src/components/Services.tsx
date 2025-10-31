@@ -1,35 +1,28 @@
-import { Hammer, Wrench, PaintBucket, Home, Layers, Drill } from "lucide-react";
+import infrastructureImg from "@/assets/service-infrastructure.jpg";
+import finishingImg from "@/assets/service-finishing.jpg";
+import renovationImg from "@/assets/service-renovation.jpg";
+import projectOffice from "@/assets/project-office.jpg";
 
 const services = [
   {
-    icon: Wrench,
+    image: infrastructureImg,
     title: "תשתיות ושלד",
-    description: "אינסטלציה, צנרת, עבודות גגות, חשמל והרחבות",
+    description: "אינסטלציה, צנרת, עבודות גגות, חשמל, הרחבות",
   },
   {
-    icon: PaintBucket,
+    image: finishingImg,
     title: "גמר ועיצוב",
-    description: "ריצוף, חיפויים, טיח וצבע, גבס ונגרות",
+    description: "ריצוף, חיפויים, טיח וצבע, גבס, נגרות ועבודות עץ",
   },
   {
-    icon: Home,
-    title: "שיפוץ חדרי אמבטיה",
-    description: "שיפוץ מקלחות ואמבטיות ברמה הגבוהה ביותר",
+    image: renovationImg,
+    title: "שיפוצים ממוקדים",
+    description: "שיפוץ חדרי אמבטיה, מטבחים, דירות ישנות, חידוש מבנים",
   },
   {
-    icon: Layers,
-    title: "שיפוץ מטבחים",
-    description: "תכנון וביצוע מטבחים מודרניים ומעוצבים",
-  },
-  {
-    icon: Hammer,
-    title: "שיפוץ דירות מלא",
-    description: "חידוש מבנים ישנים והפיכתם לדירות חלומות",
-  },
-  {
-    icon: Drill,
-    title: "עבודות נגרות ועץ",
-    description: "ארונות, תקרות אקוסטיות וחלוקת חללים",
+    image: projectOffice,
+    title: "עבודות מיוחדות",
+    description: "תקרות אקוסטיות, חלוקת חללים, פתרונות מותאמים אישית",
   },
 ];
 
@@ -46,24 +39,25 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
-            const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group p-8 bg-card rounded-lg border border-border hover:border-accent transition-all duration-300 hover:shadow-xl animate-fade-in-up"
+                className="group relative overflow-hidden rounded-lg hover:shadow-glow transition-all duration-300 animate-fade-in-up h-80"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-lg bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300">
-                  <Icon className="h-7 w-7" />
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${service.image})` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
+                <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                  <p className="text-white/90 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
               </div>
             );
           })}
