@@ -26,15 +26,6 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between gap-4">
-        {/* Phone Button - Left Side */}
-        <button
-          onClick={handlePhoneCall}
-          className="hidden lg:flex items-center gap-3 px-6 py-3 bg-accent text-accent-foreground rounded-lg hover:opacity-90 transition-all hover:scale-105 font-bold text-lg shadow-lg"
-        >
-          <Phone className="h-6 w-6" />
-          <span dir="ltr">053-545-1234</span>
-        </button>
-
         <div className="flex items-center">
           <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-l from-accent to-secondary bg-clip-text text-transparent">
             ניסים ונפלאות
@@ -53,6 +44,15 @@ const Header = () => {
             </button>
           ))}
         </nav>
+
+        {/* Phone Button - Right Side */}
+        <button
+          onClick={handlePhoneCall}
+          className="hidden lg:flex items-center gap-3 px-6 py-3 bg-accent text-accent-foreground rounded-lg hover:opacity-90 transition-all hover:scale-105 font-bold text-lg shadow-lg"
+        >
+          <Phone className="h-6 w-6" />
+          <span dir="ltr">053-545-1234</span>
+        </button>
 
         {/* Mobile Menu Button */}
         <button
