@@ -31,15 +31,20 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[50vh] min-h-[500px] w-full overflow-hidden">
+    <section id="hero" className="relative h-[50vh] min-h-[500px] w-full overflow-hidden">
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ${
             index === currentImageIndex ? "opacity-100" : "opacity-0"
           }`}
-          style={{ backgroundImage: `url(${image})` }}
         >
+          <div
+            className={`w-full h-full bg-cover bg-center ${
+              index === currentImageIndex ? "animate-zoom" : ""
+            }`}
+            style={{ backgroundImage: `url(${image})` }}
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
         </div>
       ))}
