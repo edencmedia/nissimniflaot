@@ -50,11 +50,17 @@ const Hero = () => {
       ))}
       
       <div className="relative z-10 mx-auto max-w-7xl px-6 h-full flex items-center">
-        <div className="max-w-3xl animate-fade-in">
-          <p className="text-2xl md:text-3xl text-white/90 mb-4 font-medium">
-            משפצים בסטנדרט הגבוה ביותר, בלי הפתעות בדרך
-          </p>
-          <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
+        <div className="max-w-4xl animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+            <span className="block mb-2">משפצים בסטנדרט</span>
+            <span className="block bg-gradient-to-l from-accent to-secondary bg-clip-text text-transparent">
+              הגבוה ביותר
+            </span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-semibold text-white/90">
+              בלי הפתעות בדרך
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/85 mb-8 max-w-3xl leading-relaxed">
             כל סוגי עבודות השיפוץ והתשתיות — מא' ועד גמר, עם שקיפות מלאה ועמידה בלוחות זמנים
           </p>
           
