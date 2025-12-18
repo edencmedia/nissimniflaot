@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare } from "lucide-react";
 import { useState, useEffect } from "react";
-import heroImage from "@/assets/hero-renovation.jpg";
-import bathroomImg from "@/assets/project-bathroom.jpg";
-import kitchenImg from "@/assets/project-kitchen.jpg";
-import bedroomImg from "@/assets/project-bedroom.jpg";
-import livingImg from "@/assets/project-living.jpg";
+import bathroom1 from "@/assets/project-bathroom-1.jpg";
+import bathroom2 from "@/assets/project-bathroom-2.jpg";
+import lobby1 from "@/assets/project-lobby-1.jpg";
+import lobby2 from "@/assets/project-lobby-2.jpg";
+import outdoor1 from "@/assets/project-outdoor-1.jpg";
 
-const images = [heroImage, bathroomImg, kitchenImg, bedroomImg, livingImg];
+const images = [bathroom1, lobby1, bathroom2, outdoor1, lobby2];
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -1,5 +1,6 @@
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,11 +26,13 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between gap-4">
+      <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between gap-4">
         <div className="flex items-center">
-          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-l from-accent to-secondary bg-clip-text text-transparent">
-            ניסים ונפלאות
-          </h1>
+          <img 
+            src={logo} 
+            alt="ניסים ונפלאות - בנייה ושיפוצים" 
+            className="h-12 md:h-14 w-auto"
+          />
         </div>
 
         {/* Desktop Menu */}
