@@ -1,48 +1,69 @@
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import bathroomImage from "@/assets/project-bathroom.jpg";
-import kitchenImage from "@/assets/project-kitchen.jpg";
-import bedroomImage from "@/assets/project-bedroom.jpg";
-import livingImage from "@/assets/project-living.jpg";
-import officeImage from "@/assets/project-office.jpg";
-import heroImage from "@/assets/hero-renovation.jpg";
+import bathroom1 from "@/assets/project-bathroom-1.jpg";
+import bathroom2 from "@/assets/project-bathroom-2.jpg";
+import lobby1 from "@/assets/project-lobby-1.jpg";
+import lobby2 from "@/assets/project-lobby-2.jpg";
+import lobby3 from "@/assets/project-lobby-3.jpg";
+import outdoor1 from "@/assets/project-outdoor-1.jpg";
+import outdoor2 from "@/assets/project-outdoor-2.jpg";
+import outdoor3 from "@/assets/project-outdoor-3.jpg";
+import shed from "@/assets/project-shed.jpg";
 
 const projects = [
   {
-    image: bathroomImage,
+    image: bathroom1,
     title: "שיפוץ חדר אמבטיה יוקרתי",
     category: "אמבטיה",
     location: "תל אביב",
   },
   {
-    image: kitchenImage,
-    title: "מטבח מודרני ומעוצב",
-    category: "מטבח",
-    location: "ראשון לציון",
-  },
-  {
-    image: bedroomImage,
-    title: "חדר שינה אלגנטי",
-    category: "חדר שינה",
-    location: "אשדוד",
-  },
-  {
-    image: livingImage,
-    title: "סלון ופינת אוכל",
-    category: "מרחב מגורים",
-    location: "באר שבע",
-  },
-  {
-    image: officeImage,
-    title: "חדר עבודה עם נגרות בהתאמה אישית",
-    category: "נגרות",
+    image: lobby1,
+    title: "לובי מסחרי מעוצב",
+    category: "מסחרי",
     location: "רמת גן",
   },
   {
-    image: heroImage,
-    title: "שיפוץ דירה מלא",
-    category: "פרויקט מלא",
+    image: bathroom2,
+    title: "חדר רחצה מודרני",
+    category: "אמבטיה",
+    location: "ראשון לציון",
+  },
+  {
+    image: outdoor1,
+    title: "מטבח חוץ",
+    category: "חוץ",
+    location: "אשדוד",
+  },
+  {
+    image: lobby2,
+    title: "עיצוב לובי מאורות",
+    category: "מסחרי",
+    location: "תל אביב",
+  },
+  {
+    image: shed,
+    title: "מבנה עץ בחצר",
+    category: "חוץ",
+    location: "באר שבע",
+  },
+  {
+    image: lobby3,
+    title: "מסדרון תאורה ייחודית",
+    category: "מסחרי",
     location: "נתניה",
+  },
+  {
+    image: outdoor2,
+    title: "פרגולה ומטבח חוץ",
+    category: "חוץ",
+    location: "הרצליה",
+  },
+  {
+    image: outdoor3,
+    title: "פינת בישול חיצונית",
+    category: "חוץ",
+    location: "רעננה",
   },
 ];
 
