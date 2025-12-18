@@ -35,7 +35,7 @@ const Header = () => {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between gap-4">
         <div className="flex items-center">
-          <img src={logo} alt="ניסים ונפלאות - בנייה ושיפוצים" className="h-12 md:h-14 w-auto object-cover" />
+          <img src={logo} alt="ניסים ונפלאות - בנייה ושיפוצים" className="h-16 md:h-20 w-auto object-cover" />
         </div>
 
         {/* Desktop Menu */}
