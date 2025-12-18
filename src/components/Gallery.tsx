@@ -3,11 +3,8 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import bathroom1 from "@/assets/project-bathroom-1.jpg";
 import bathroom2 from "@/assets/project-bathroom-2.jpg";
 import lobby1 from "@/assets/project-lobby-1.jpg";
-import lobby2 from "@/assets/project-lobby-2.jpg";
 import lobby3 from "@/assets/project-lobby-3.jpg";
-import outdoor1 from "@/assets/project-outdoor-1.jpg";
 import outdoor2 from "@/assets/project-outdoor-2.jpg";
-import outdoor3 from "@/assets/project-outdoor-3.jpg";
 import shed from "@/assets/project-shed.jpg";
 
 const projects = [
@@ -30,18 +27,6 @@ const projects = [
     location: "ראשון לציון",
   },
   {
-    image: outdoor1,
-    title: "מטבח חוץ",
-    category: "חוץ",
-    location: "אשדוד",
-  },
-  {
-    image: lobby2,
-    title: "עיצוב לובי מאורות",
-    category: "מסחרי",
-    location: "תל אביב",
-  },
-  {
     image: shed,
     title: "מבנה עץ בחצר",
     category: "חוץ",
@@ -58,12 +43,6 @@ const projects = [
     title: "פרגולה ומטבח חוץ",
     category: "חוץ",
     location: "הרצליה",
-  },
-  {
-    image: outdoor3,
-    title: "פינת בישול חיצונית",
-    category: "חוץ",
-    location: "רעננה",
   },
 ];
 
